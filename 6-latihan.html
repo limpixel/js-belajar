@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>6 - Latihan</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png">
+
+    <style>
+        .bg-green {
+            background-color: red;
+        }
+
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+
+        .bulat {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-6 mb-6">
+                <button class="btn btn-sm btn-primary" onclick="getKotak()">
+                    Membuat Kotak
+                </button>
+            </div>
+
+            <div class="col-6 mb-6">
+                <button class="btn btn-sm btn-success" onclick="getBulat()"> Membuat Lingkaran</button>
+            </div>
+        </div>
+
+        <div class="row mt-5 ">
+            <div class="col-6"><div id="kotak"></div></div>
+            <div class="col-6"><div id="bulat"></div></div>
+        </div>
+    </div>
+    <script>
+        function getKotak(kotak) {
+            let getKotak = document.querySelector('#kotak')
+            getKotak.classList.add('kotak');
+        }
+        function getBulat(bulat) {
+            let getKotak = document.querySelector('#bulat')
+            getKotak.classList.add('bulat');
+        }
+    </script>
+</body>
+
+</html>
